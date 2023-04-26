@@ -45,7 +45,7 @@ const SearchProduct = ({
                     class='inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                     onClick={() => handleOptionClick(`men's clothing`)}
                   >
-                    men's clothing
+                    men&apos;s clothing
                   </button>
                 </li>
                 <li>
@@ -72,7 +72,7 @@ const SearchProduct = ({
                     class='inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                     onClick={() => handleOptionClick(`women's clothing`)}
                   >
-                    women's clothing
+                    women&apos;s clothing
                   </button>
                 </li>
               </ul>
