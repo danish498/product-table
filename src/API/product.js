@@ -2,7 +2,7 @@ import { DELETE, GET, POST, PUT } from './config';
 
 export const getProduct = () => GET('/products');
 
-export const getSingleProduct = (id ) => GEt(`/products/${id}`)
+export const getSingleProduct = (id) => GET(`/products/${id}`);
 
 export const updateProductData = (id, body) => {
   return PUT(`/products/${id}`, body);

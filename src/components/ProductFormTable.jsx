@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Button from './common/Button';
+import { toast } from 'react-toastify';
 import { AiOutlineEye } from 'react-icons/ai';
 import { RxUpdate } from 'react-icons/rx';
 import { AiOutlineDelete } from 'react-icons/ai';
 import { FiSave } from 'react-icons/fi';
 import { RxCross2 } from 'react-icons/rx';
-import axios from 'axios';
 import ProductDetailsModal from './ProductModal';
 import {
   deleteProductData,
@@ -65,7 +65,8 @@ const ProductFormTable = ({ product }) => {
           description: updateProduct.description,
         },
       });
-      console.log('#3#############################################', data);
+      toast.success('Product Updated Successfully');
+      console.log('Product Updated Successfully', data);
     } catch (error) {
       console.log(error);
     }
@@ -74,8 +75,8 @@ const ProductFormTable = ({ product }) => {
   const deleteHandler = async (id) => {
     try {
       const data = await deleteProductData(id);
-
-      console.log('#############CHECK THE DELETE DATA OVER HERE', data);
+      toast('Product deleted! ');
+      console.log('Product deleted', data);
     } catch (error) {
       console.log(error);
     }
