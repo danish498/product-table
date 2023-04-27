@@ -51,11 +51,10 @@ const ProductFormTable = ({ product }) => {
   };
 
   const handleSave = async (id) => {
-    //todo this would be updage products
+    //todo this would  updage products
 
     setEditUserId(null);
-    console.log(updateProduct);
-    console.log(id);
+
     try {
       const data = await updateProductData(id, {
         body: {

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const ProductDetailsModal = ({ product, closeModal }) => {
   return (
     <div className='fixed z-10 inset-0 overflow-y-auto bg-gray-500 bg-opacity-10 flex items-center justify-center  p-48'>
-      <div className='bg-white rounded-lg p-8  w-1/2 mx-2  '>
+      <div className='bg-white rounded-lg p-8  w-full lg:w-1/2 mx-2  '>
         <div className=''>
           <a href='#'>
             <img
